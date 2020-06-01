@@ -1,0 +1,12 @@
+defaultPortal: Cloudtask
+portals:
+  - name: Cloudtask
+    portalId: 1709048
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CJupj6ObLhIEAAUABBj4p2gg6YLRAyju6QwyGQCxxuGrU8QypXIQoJAXAstcUtzDRizOk0E6EQAABEEAAAAAAAAAAAAAAACAQhkAscbhq56a0lTOMP5HvrUUq0_LeCLgikDS
+        expiresAt: '2020-04-26T02:49:33.599Z'
+    personalAccessKey: >-
+      CiQ2MDgxNWRlOC1iMTBkLTRhNTUtYWE0My03OWQ5MDcxMmE2OTUQ-KdoGOmC0QMiJDkyY2U0N2YzLTg1YTUtNDNkMS1iNGI4LTUwOTZlMTlkMDk2NSoZAAXmkYKqXjZITI75SHoRCxdolw6yK36YGA

@@ -1,0 +1,17 @@
+.c-btn {
+  appearance: none;
+  border: none;
+  display: inline-flex;
+  &--primary {
+    border-radius: 2.9rem;
+    background-color: color(orange-30);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.16);
+    font-weight: 800;
+    max-width: 44.1rem;
+    padding: 1.4rem 1rem 1.6rem 1rem;
+
+    @include iota-breakpoint(md) {
+      padding: 1.4rem 4rem 1.6rem 4rem;
+    }
+  }
+}

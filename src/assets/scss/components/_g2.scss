@@ -1,0 +1,42 @@
+.c-g2 {
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://cdn2.hubspot.net/hubfs/1709048/Lead%20Gen/Background-G2.png');
+  display: flex;
+  margin-bottom: 4rem;
+  min-height: 109.8rem;
+
+  @include iota-breakpoint(md) {
+    margin-bottom: 8rem;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 77.8rem;
+    text-align: center;
+  }
+
+  &__title {
+    @include type-size(level3);
+    color: color(blue);
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  &__img {
+    margin: 0 auto 5rem auto;
+  }
+
+  &__copy {
+    @include type-size(level4);
+    font-weight: 300;
+    margin-bottom: 5rem;
+  }
+
+  &__btn {
+    @include type-size(level7);
+    color: color(white);
+    font-weight: 800;
+  }
+}

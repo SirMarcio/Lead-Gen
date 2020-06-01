@@ -1,0 +1,70 @@
+.c-form {
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('https://cdn2.hubspot.net/hubfs/1709048/Lead%20Gen/form-bg.png');
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  min-height: 58.7rem;
+
+  @include iota-breakpoint(md) {
+    margin-bottom: 8rem;
+  }
+
+  &__wrapper {
+    border-radius: 3rem;
+    background-color: color(white);
+    box-shadow: 0 0 3rem rgba(139, 139, 139, 0.16);
+    margin-top: 10.2rem;
+    max-width: 97rem;
+    min-height: 66.8rem;
+    padding: 6rem 9rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    input {
+      @include type-size(body);
+      border-radius: 2.5rem;
+      border: 0.1rem solid color(blue);
+      color: color(black);
+      margin-bottom: 2rem;
+      margin-right: 3.9rem;
+      padding: 1.3rem 0;
+      text-align: center;
+      width: calc(50% - 3.9rem);
+
+      &::placeholder {
+        color: color(black);
+      }
+
+      &:nth-child(even) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__title {
+    @include type-size(level4);
+    color: color(blue);
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    @include type-size(level6);
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+
+  &__submit {
+    max-width: 100%;
+  }
+}
