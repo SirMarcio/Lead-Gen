@@ -1,9 +1,29 @@
 .c-intro {
   margin-bottom: 4rem;
-  padding: 0 2rem;
+
   @include iota-breakpoint(md) {
     margin-bottom: 8rem;
-    padding: 0;
+    padding-bottom: 3.6rem;
+  }
+
+  &--why {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+    @include iota-breakpoint(md) {
+      background-image: url('https://cdn2.hubspot.net/hubfs/1709048/Lead%20Gen/why-we-do-bg.png');
+    }
+  }
+
+  &--our {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+    @include iota-breakpoint(md) {
+      background-image: url('https://cdn2.hubspot.net/hubfs/1709048/Lead%20Gen/Our-Lead-Generation.png');
+    }
   }
 
   &__wrapper {

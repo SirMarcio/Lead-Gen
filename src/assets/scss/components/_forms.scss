@@ -20,10 +20,14 @@
     margin-top: 10.2rem;
     max-width: 97rem;
     min-height: 66.8rem;
-    padding: 6rem 9rem;
+    padding: 4rem;
     position: relative;
     text-align: center;
     width: 100%;
+
+    @include iota-breakpoint(md) {
+      padding: 6rem 9rem;
+    }
   }
 
   &__inner {
@@ -31,16 +35,23 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    @include iota-breakpoint(md) {
+      justify-content: space-between;
+    }
+
     input {
       @include type-size(body);
       border-radius: 2.5rem;
       border: 0.1rem solid color(blue);
       color: color(black);
       margin-bottom: 2rem;
-      margin-right: 3.9rem;
       padding: 1.3rem 0;
       text-align: center;
-      width: calc(50% - 3.9rem);
+      width: 100%;
+
+      @include iota-breakpoint(md) {
+        width: calc(50% - 2rem);
+      }
 
       &::placeholder {
         color: color(black);
@@ -65,6 +76,22 @@
   }
 
   &__submit {
+    display: block;
+    width: 100%;
     max-width: 100%;
+  }
+
+  &__legal {
+    color: color(black);
+    font-size: 1.2rem;
+    margin-top: 3rem;
+
+    a {
+      color: color(blue);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
